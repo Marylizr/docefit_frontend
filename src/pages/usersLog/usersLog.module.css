@@ -1,0 +1,19 @@
+.content{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.signup{
+   background: no-repeat scroll 0% 0% rgba(158, 172, 116, 0.1);
+   height: 450px;
+   color: gray;
+}
+
+.login{
+    color: gray;
+}

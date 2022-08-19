@@ -1,0 +1,37 @@
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.content > form {
+  display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   align-items: flex-start;
+   width: 300px;
+}
+
+.content > form >input {
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+  border: lightgray 1px solid;
+  border-radius: 5px;
+}
+
+.submit {
+  background-color:  rgba(158, 172, 116, 0.9);
+  color:white;
+}

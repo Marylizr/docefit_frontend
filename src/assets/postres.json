@@ -1,0 +1,98 @@
+[
+  {
+    "type": "cheesecake",
+    "price": 45,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Cheesecake de mango",
+    "format": "formato 1 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/cheeseCake-1.png"
+  },
+  {
+    "type": "tarta",
+    "price": 35,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Tarta tope de crema",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/tarta-1"
+  },
+  {
+    "type": "tarta",
+    "price": 40,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Tarta personalizada",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/tarta-2"
+  },
+  {
+    "type": "tarta",
+    "price": 47,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Tarta con frutos rojos",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/tarta-3"
+  },
+  {
+    "type": "tarta",
+    "price": 39,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Tarta personalizada",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/tarta-4"
+  },
+  {
+    "type": "cheesecake",
+    "price": 45,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Pistacho y almendras ",
+    "format": "formato 1 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/cheeseCake-2"
+  },
+  {
+    "type": "cheesecake",
+    "price": 29,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Cheesecake de frutos rojos",
+    "format": "1 kg para 5-6 raciones",
+    "thumbnailUrl": "https://marylizr.com/img-cart/cheeseCake-3"
+  },
+  {
+    "type": "cheeseCake",
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "price": 45,
+    "title": "Cheesecake de maracuya",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/cheeseCake-4"
+  },
+  {
+    "type": "Tarta",
+    "price": 36,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Tarta personalizada",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/tarta-5"
+  },
+  {
+    "type": "cheeseCake",
+    "price": 45,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Cheesecake de frambuesas",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/cheeseCake-5"
+  },
+  {
+    "type": "sin gluten",
+    "price": 33,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "Tarta de chocolate sin gluten",
+    "format": "formato 1 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/sinGluten-1"
+  },
+  {
+    "type": "sin gluten",
+    "price": 23,
+    "description": "Delicioso y cremoso postre, hecho en casa",
+    "title": "OreoCake con chocolate",
+    "format": "formato 2 kg",
+    "thumbnailUrl": "https://marylizr.com/img-cart/sinGluten-2"
+  }
+]
