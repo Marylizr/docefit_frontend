@@ -1,8 +1,6 @@
 import React from "react";
 
-import DotLoader from "react-spinners/DotLoader";
-
-
+// import DotLoader from "react-spinners/DotLoader";
 
 const LoadingPage = () => {
 
@@ -10,7 +8,7 @@ const LoadingPage = () => {
 
       <div className="sweet-loading">
 
-         <DotLoader loading={true}  size={150}/>
+         {/* <DotLoader loading={true}  size={150}/> */}
 
       </div>
    )

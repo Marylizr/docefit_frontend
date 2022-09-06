@@ -1,42 +1,51 @@
 import React, { useEffect } from 'react';
 import {useForm} from 'react-hook-form';
 import styles from './userRegister.module.css';
-
+import customFetch from '../../api';
+import { setUserSession } from "../../api/auth";
+import { useNavigate } from "react-router-dom";
 
 
 const UserRegister = () => {
 
-   const {register, handleSubmit, formState:{ errors} } = useForm();
-   const onSubmit = data => {
-      console.log(data);
-      fetch('http://localhost:3010/users', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
-   };
+    const navigate = useNavigate();
 
-   useEffect(() => {
-      console.log('Errors', errors);
-   }, [errors]);
+    useEffect(() => {
+      const token = localStorage.getItem("token");
+      if (token) navigate("/securedcontent/dashboard");
+    }, [navigate]);
+  
+    const {
+       register,
+       handleSubmit,
+       formState: { errors },
+     } = useForm();
    
+     const onSubmit = (data) => {
+       customFetch("POST", "user", {body: data})
+       .then(userSession => {
+         setUserSession(userSession);
+         navigate("/securedcontent/dashboard");
+       }).catch(error => {
+         console.error('not possible to sign up');
+       });
+     };
+
    return (
       <div className={styles.content}>
           <form onSubmit={handleSubmit(onSubmit)}>
                 <label>Complete Name</label>
-                <input type="text" placeholder='you complete name' {...register("complete_name", { required: true, pattern: /^[A-Za-z]+$/i  })} />
+                <input type="text" placeholder='Your userName' {...register("name", { required: true  })} />
                 {errors.name?.type === 'required' && <p className={styles.error}>This field is required</p>}
                 {errors.name?.type === 'pattern' && <p className={styles.error}>Incorrect name</p>}
+                <br/>
+                <input type="text" placeholder='your LastName here' {...register("lastName", { required: true  })} />
+                {errors.lastName?.type === 'required' && <p className={styles.error}>This field is required</p>}
+                {errors.lastName?.type === 'pattern' && <p className={styles.error}>Incorrect name</p>}
                 <br/>
                 <label>Email</label>
                 <input type="text" placeholder='myemail.mail.com' {...register("email", { required: true })} />
                 {errors.email && <p className={styles.error}>This field is required</p>}
-                <br/>
-                <label>Address</label>
-                <input type="text" placeholder='street, floor, apart...'{...register("address", { required: true })}  />
-                {errors.address && <p className={styles.error}>This field is required</p>}
                 <br/>
                 <label>Password</label>
                 <input type="password" placeholder='minLength: 8 ' {...register("password", { required: true, minLength: 8 })} />

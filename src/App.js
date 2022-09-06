@@ -8,6 +8,9 @@ import Cart from './pages/cart/cart';
 import Header from './components/header/header';
 import UsersLog from './pages/usersLog/UsersLog';
 import ProductList from './components/productList/productList';
+import AddProduct from './pages/addProduct/AddProduct';
+import SecuredContent from './pages/securedContent/securedContent';
+import AdminUsers from './pages/adminUsers/adminUsers';
 
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
 					  <Route path="/cart" element={<Cart/>} />
 					  <Route path="/contact" element={<Contact/>} />
 					  <Route path="/login" element={<UsersLog/>} />
+            <Route path="/addProduct" element={<AddProduct/>} />
+            <Route path="/adminUsers" element={<AdminUsers/>} />
+            <Route path="/securedcontent/*" element={<SecuredContent />} />
 					</Routes>
         </div>
       

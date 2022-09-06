@@ -6,8 +6,6 @@ import styles from './home.module.css'
 
 const Home = ({searchValue}) => {
     
-    
-
      return(
           <div className={styles.home}>
 

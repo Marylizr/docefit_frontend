@@ -1,0 +1,44 @@
+.box{
+   width: 300px;
+    height: 250px;
+    border: 1px solid gray;
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.box > a{
+   text-decoration: none;
+   color: gray;
+}
+
+.box > a:hover{
+   text-transform: capitalize;
+   font-size: xx-large;
+   color: rgba(158, 172, 116, 0.9);
+}
+
+.dashboard{
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+}

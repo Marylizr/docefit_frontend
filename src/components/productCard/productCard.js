@@ -3,6 +3,7 @@ import customFetch from '../../api';
 import { useModal } from "../../hooks/useModal";
 import { useState } from 'react';
 import Modal from "../modal/modal";
+import { Link } from 'react-router-dom';
 
 
 const Product = ({ item, isInCart=false, addToCart }) => {
@@ -31,9 +32,9 @@ const Product = ({ item, isInCart=false, addToCart }) => {
      return(
           <div className={styles.product} style={{ backgroundImage: `url(${item.thumbnailUrl})` }} >
                <div className={styles.info}>
-                    <h4>{item.title}</h4>
+                    <h2>{item.title}</h2>
                     <p>{item.description}</p>
-                    <p><b>Preço: {item.price}</b> €</p>
+                    <h2><b>Preço: {item.price}</b> €</h2>
                </div>
                <div className={styles.button}>
                     {!isInCart && 
@@ -44,10 +45,13 @@ const Product = ({ item, isInCart=false, addToCart }) => {
                          openModal()  
                          } }>Add to Cart +</button>}
                </div>
+               
+
                {selectedItem && 
                <Modal isOpen={isOpenModal} closeModal={closeModal}>
-                    <h2>a tua {selectedItem.type} tem sido agregada no carrinho!</h2>
+                    <h2>a tua {selectedItem.type} tem sido agregad@ no carrinho!</h2>
                     <img src={selectedItem.thumbnailUrl} width="300" alt="img"/> 
+                    <button className={styles.checkout}><Link to="/cart"> go to Cart </Link> </button>
                </Modal>}
                
           </div>

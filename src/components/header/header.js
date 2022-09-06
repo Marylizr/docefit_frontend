@@ -13,10 +13,10 @@ const Header = ({onSearch}) => {
 								<ul>
 									<li><Link to="/">Home</Link></li>
 									<li><Link to="/products">Products</Link></li>
-									<li><Link to="/about">Sobre nós</Link></li>
-									<li><Link to="/cart">Carrinho</Link></li>
+									<li><Link to="/about">About Us</Link></li>
+									<li><Link to="/cart">Cart</Link></li>
 									<li><Link to="/contact">Contact</Link></li>
-									<li><Link to="/login">Log in</Link></li>
+									<li><Link to="/login">GetIn</Link></li>
 								</ul>
 								<div className={styles.seach}> <input onChange={event => 
 									{const value = event.target.value;

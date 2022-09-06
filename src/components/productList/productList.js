@@ -5,7 +5,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 
-
 const ProductList = ({ searchValue, isInCart=false, onClick }) => {
      
      const [filteredData, setFilteredData] = useState([]);

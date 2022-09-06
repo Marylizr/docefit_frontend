@@ -1,22 +1,30 @@
 import React, { useEffect } from 'react';
 import {useForm} from 'react-hook-form';
 import styles from '../Login/login.module.css';
-
-
+import customFetch from '../../api';
+import { setUserSession } from "../../api/auth";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem("token");
+        if (token) navigate("/securedcontent/dashboard");
+      }, [navigate]);
 
    const {register, handleSubmit, formState:{ errors} } = useForm();
+   
    const onSubmit = data => {
-      console.log(data);
-      fetch('http://localhost:3010/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
+    customFetch("POST", "login", {body: data})
+    .then(userSession => {
+      setUserSession(userSession);
+      navigate("/securedcontent/dashboard");
+    }).catch(error => {
+      console.error('its no possible to log in');
+    });
    };
+
 
    useEffect(() => {
       console.log('Errors', errors);

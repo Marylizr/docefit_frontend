@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+ 
   }
 
   .onCart{
@@ -35,3 +35,21 @@ p{
   font-size: large;
 }
 
+.count{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.payment{
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: medium;
+  margin-top: 10px;
+  background: no-repeat scroll 0% 0% rgba(158, 172, 116, 0.9);
+  border: none;
+  color: white;
+}

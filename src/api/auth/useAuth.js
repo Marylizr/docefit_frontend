@@ -11,7 +11,7 @@ const useAuth = () => {
     useEffect(()=> {
         if(token){
             setLoading(true);
-            fetchResource("GET", "users")
+            fetchResource("GET", "user")
                 .then(userData => {
                     setIsSessionValid(true);
                     setTimeout(() => setLoading(false), 1000)

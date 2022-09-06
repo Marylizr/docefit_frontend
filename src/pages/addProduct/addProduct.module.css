@@ -1,0 +1,85 @@
+.content{
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+
+}
+
+.addProduct > form{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   margin-top: 10px;
+   align-items: center;
+}
+
+.addProduct > form > input, textarea {
+   width: 300px;
+   height: 40px;
+   border-radius: 5px;
+   border: 1px solid gray;
+   font-size: medium;
+   margin-top: 10px;
+}
+
+.addProduct .send  {
+   width: 120px;
+   height: 40px;
+   border-radius: 5px;
+   font-size: medium;
+   margin-top: 10px;
+   background: no-repeat scroll 0% 0% rgba(158, 172, 116, 0.9);
+   border: none;
+   color: white;
+   margin-right: 20px ;
+}
+
+.addProduct{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+   margin-top: 10px;
+   align-items: center;
+}
+
+.addProduct .reload  {
+   width: 120px;
+   height: 40px;
+   border-radius: 5px;
+   font-size: medium;
+   margin-top: 10px;
+   border: gray solid 1px;
+   color: gray;
+   background-color: transparent;
+}
+
+.buttons{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+   align-items: center;
+   margin-top:20px;
+}
+
+.wrapper{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color:gray;
+}
+
+
+
