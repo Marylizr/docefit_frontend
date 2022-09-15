@@ -26,6 +26,10 @@
   margin: 0.5em 0 0.5em 1em;
 }
 
+#topnav .logo > img{
+  margin-left: 20px;
+}
+
 #topnav .logo a {
   text-decoration: none;
   padding: 3px 0 0 5px;

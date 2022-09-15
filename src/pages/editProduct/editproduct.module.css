@@ -1,0 +1,64 @@
+ form {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+}
+
+ form > input {
+    height: 25px;
+    margin-top: 5px;
+    border: lightgray 1px solid;
+    border-radius: 5px;
+}
+
+.main{
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .send  {
+   width: 120px;
+   height: 40px;
+   border-radius: 5px;
+   font-size: medium;
+   margin-top: 10px;
+   background: no-repeat scroll 0% 0% rgba(158, 172, 116, 0.9);
+   border: none;
+   color: white;
+   margin-right: 20px ;
+}
+.wrapper .reload  {
+   width: 120px;
+   height: 40px;
+   border-radius: 5px;
+   font-size: medium;
+   margin-top: 10px;
+   border: gray solid 1px;
+   color: gray;
+   background-color: transparent;
+}
+
+.buttons{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+   align-items: center;
+   margin-top: 20px;
+   justify-content: center;
+}

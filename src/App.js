@@ -11,6 +11,7 @@ import ProductList from './components/productList/productList';
 import AddProduct from './pages/addProduct/AddProduct';
 import SecuredContent from './pages/securedContent/securedContent';
 import AdminUsers from './pages/adminUsers/adminUsers';
+import EditProduct from './pages/editProduct/editproduct';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 					  <Route path="/contact" element={<Contact/>} />
 					  <Route path="/login" element={<UsersLog/>} />
             <Route path="/addProduct" element={<AddProduct/>} />
+            <Route path="/editProduct" element={<EditProduct/>} />
             <Route path="/adminUsers" element={<AdminUsers/>} />
             <Route path="/securedcontent/*" element={<SecuredContent />} />
 					</Routes>

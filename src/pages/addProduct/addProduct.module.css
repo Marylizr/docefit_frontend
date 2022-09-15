@@ -25,11 +25,11 @@
 
 .addProduct > form > input, textarea {
    width: 300px;
-   height: 40px;
+   height: 30px;
    border-radius: 5px;
    border: 1px solid gray;
-   font-size: medium;
-   margin-top: 10px;
+   font-size: small;
+   margin-top: 5px;
 }
 
 .addProduct .send  {
@@ -53,25 +53,6 @@
    align-items: center;
 }
 
-.addProduct .reload  {
-   width: 120px;
-   height: 40px;
-   border-radius: 5px;
-   font-size: medium;
-   margin-top: 10px;
-   border: gray solid 1px;
-   color: gray;
-   background-color: transparent;
-}
-
-.buttons{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-content: center;
-   align-items: center;
-   margin-top:20px;
-}
 
 .wrapper{
    display: flex;

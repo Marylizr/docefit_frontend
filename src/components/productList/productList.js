@@ -1,9 +1,8 @@
 import React from "react";
 import styles from './productList.module.css';
 import Product from "../productCard/productCard";
-import { useState } from "react";
-import { useEffect } from "react";
-
+import { useState, useEffect } from "react";
+// import customFetch from '../../api';
 
 const ProductList = ({ searchValue, isInCart=false, onClick }) => {
      

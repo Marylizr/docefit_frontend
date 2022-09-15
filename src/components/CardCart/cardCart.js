@@ -2,7 +2,7 @@ import React from "react";
 import styles from './product.module.css';
 // import customFetch from '../../api';
 
-const CardCart = ({ item }) => {
+const CardCart = ({ item, onClick }) => {
 
      const handleDelete = (id) => { 
           fetch('http://localhost:3001/cart/'+ id, {
@@ -20,7 +20,7 @@ const CardCart = ({ item }) => {
      //   }; 
       
      return(
-          <div className={styles.product} >
+          <div className={styles.product} onClick={onClick} >
                <h4>{item.title}</h4>
                <p><b>Preço:{item.price}</b>€</p>
                <img src={item.thumbnailUrl} alt="tartas"/>
