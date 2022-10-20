@@ -27,8 +27,9 @@ const Product = ({ item, isInCart=false, addToCart }) => {
           .catch(error => {
                console.error(error);
           })
-
      }
+
+
      return(
           <div className={styles.product} style={{ backgroundImage: `url(${item.thumbnailUrl})` }} >
                <div className={styles.info}>
@@ -46,7 +47,6 @@ const Product = ({ item, isInCart=false, addToCart }) => {
                          } }>Add to Cart +</button>}
                </div>
                
-
                {selectedItem && 
                <Modal isOpen={isOpenModal} closeModal={closeModal}>
                     <h2>a tua {selectedItem.type} tem sido agregad@ no carrinho!</h2>

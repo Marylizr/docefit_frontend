@@ -12,7 +12,7 @@ import AddProduct from './pages/addProduct/AddProduct';
 import SecuredContent from './pages/securedContent/securedContent';
 import AdminUsers from './pages/adminUsers/adminUsers';
 import EditProduct from './pages/editProduct/editproduct';
-
+import DeleteProduct from './pages/deleteProduct/DeleteProduct';
 
 function App() {
   const [searchValue, setSearchValue] = useState('');
@@ -31,6 +31,7 @@ function App() {
 					  <Route path="/login" element={<UsersLog/>} />
             <Route path="/addProduct" element={<AddProduct/>} />
             <Route path="/editProduct" element={<EditProduct/>} />
+            <Route path="/deleteProduct" element={<DeleteProduct/>} />
             <Route path="/adminUsers" element={<AdminUsers/>} />
             <Route path="/securedcontent/*" element={<SecuredContent />} />
 					</Routes>

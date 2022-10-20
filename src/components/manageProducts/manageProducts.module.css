@@ -2,3 +2,21 @@
   display: flex;
   width: 23vw;
 }
+
+.manage >ul >li >a{
+  text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+.manage >ul >li >a:hover{
+  text-decoration: none;
+    color: rgba(158, 172, 116, 0.9);
+    font-size: 20px;
+}
+
+.manage >ul >li{
+  list-style: none;
+  margin-top: 18px;
+}
+

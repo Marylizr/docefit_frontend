@@ -8,7 +8,7 @@ const ManageProducts = () => {
        <ul>
           <li><Link to='/addProduct'> Add Product</Link></li>
           <li><Link to='/editProduct'>Edit Product </Link> </li>
-          <li>Delete Product</li>
+          <li><Link to='/deleteProduct'>Delete Product </Link> </li>
        </ul>
    </div>
   )

@@ -60,7 +60,7 @@ const Cart = () => {
                </div>   
                <div className={styles.count}>
                {onCart && onCart.length > 0 && onCart.map((item) => 
-                          <p>{item.title}: {item.price} €</p> 
+                          <p key={item._id}>{item.title}: {item.price} €</p> 
                               )}
                
                     {(!onCart || onCart.length === 0) && (<p>0 productos</p>)}

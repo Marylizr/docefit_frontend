@@ -14,8 +14,8 @@ const CardCart = ({ item, onClick }) => {
           })
           .then(res => {window.location.reload()}) 
        }
-     // const handleDelete = (_id) => { 
-     //      customFetch("DELETE", "cart/", + _id , {body: item})
+     // const handleDelete = (id) => { 
+     //      customFetch("DELETE", "cart/", + id , {body: item})
      //      .then(res => {window.location.reload()}) 
      //   }; 
       
